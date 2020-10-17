@@ -7,4 +7,5 @@
 export type Property = {
     address: string
     image: string
+    desc: string
 }

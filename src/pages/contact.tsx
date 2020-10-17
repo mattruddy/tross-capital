@@ -1,7 +1,6 @@
 import { FormEvent, useState } from "react"
-import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap"
+import { Button, Card, CardBody, Container, Form, FormGroup, Input, Label } from "reactstrap"
 import Layout from "../components/Layout"
-import * as emailjs from 'emailjs-com'
 
 
 const ContactPage = () => {
@@ -12,33 +11,34 @@ const ContactPage = () => {
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault()
-        emailjs.
     }
 
     return (
         <Layout title="Tross Capital | Contact">
-            <Container fluid>
-            <div>
-                <Form>
+            <Container>
+            <Card>
+                <CardBody>
+                <Form onSubmit={handleSubmit}>
                 <FormGroup>
                         <Label>Email</Label>
-                        <Input type="email" />
+                        <Input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
                     </FormGroup>
                     <FormGroup>
                         <Label>Full Name</Label>
-                        <Input />
+                        <Input placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} />
                     </FormGroup>
                     <FormGroup>
                         <Label>Subject</Label>
-                        <Input />
+                        <Input placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)} />
                     </FormGroup>
                     <FormGroup>
                         <Label>Message</Label>
-                        <Input type="textarea" />
+                        <Input type="textarea" rows={7} placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} />
                     </FormGroup>
-                    <Button>Send</Button>
+                    <Button type="submit">Send</Button>
                 </Form>
-            </div>
+                </CardBody>
+            </Card>
             </Container>
 
         </Layout>

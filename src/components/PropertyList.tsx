@@ -15,7 +15,7 @@ const PropertyList = ({title, properties}: Props) => {
         <Row>
             {properties.length > 0 ? properties.map((property, i) => (
                 <Col key={i}>
-                    <PropertyCard address={property.address} imageSrc={property.image} />
+                    <PropertyCard address={property.address} imageSrc={property.image} desc={property.desc} />
                 </Col>
             )) : <i style={{marginLeft: "32px"}}>Coming soon</i>}
         </Row>
