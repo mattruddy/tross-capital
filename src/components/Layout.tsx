@@ -17,10 +17,10 @@ const Layout = ({ children, title = 'Tross Capital' }: Props) => (
     <header>
       <MainNav />
     </header>
-    <div style={{marginTop: "75px"}}>
+    <div className="body main-b">
     {children}
     </div>
-    <footer className="footer">
+    <footer className="footer main-b">
       <i>Tross Capital LLC</i>
     </footer>
   </div>

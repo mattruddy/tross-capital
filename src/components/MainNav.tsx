@@ -3,8 +3,8 @@ import React from "react"
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap"
 
 const MainNav = () => (
-    <Navbar className="bb" style={{background: "white"}} fixed="top">
-    <NavbarBrand><h3>Tross Capital</h3></NavbarBrand>
+    <Navbar className="bb main-b" fixed="top">
+    <NavbarBrand href="/"><h3 style={{fontWeight: "bolder"}} className="sec-c">Tross Capital</h3></NavbarBrand>
     <Nav>
       <NavItem>
         <NavLink>

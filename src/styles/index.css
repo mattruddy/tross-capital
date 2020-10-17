@@ -1,5 +1,10 @@
+body {
+  background:  #E0E0E0;
+  font-family: "Roboto Slab", serif;
+}
+
 .footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   height: 80px;
   width: 100%;
@@ -8,6 +13,29 @@
   background: white;
 }
 
+.body {
+  margin-top: 75px;
+  margin-bottom: 85px;
+}
+
 .bb {
  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.SectionHeader {
+  width: 100%;
+  padding: 8px;
+  height: 60px;
+}
+
+.main-b {
+  background: #E0E0E0;
+}
+
+.sec-c {
+  color: rgb(66, 66, 66);
+}
+
+a {
+  color: rgb(60, 165, 255);
 }
