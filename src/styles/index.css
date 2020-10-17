@@ -39,3 +39,13 @@ body {
 a {
   color: rgb(60, 165, 255);
 }
+
+.CardImage {
+  -moz-box-shadow: 1px 1px 8px #686868;
+  -webkit-box-shadow: 1px 1px 8px #686868;
+  box-shadow: 1px 1px 8px #686868	;
+}
+
+.col {
+  padding: 0 !important;
+}

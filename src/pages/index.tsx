@@ -11,6 +11,7 @@ const IndexPage = () => (
     <Container fluid>
       <PropertyList title="Student Housing" properties={studentProperties as Property[]} />
       <PropertyList title="Mobile Home Parks" properties={mobileProperties as Property[]} />
+      <PropertyList title="Recreational" properties={[]} />
     </Container>
   </Layout>
 )

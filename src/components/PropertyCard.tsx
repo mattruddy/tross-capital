@@ -9,8 +9,8 @@ interface Props {
 const PropertyCard = ({address, imageSrc}: Props) => {
     return (
         <Card style={{
-            height: "250px",
-            width: "250px",
+            height: "280px",
+            width: "300px",
             marginBottom: "16px",
             border: "none"
         }}>
@@ -26,7 +26,7 @@ const PropertyCard = ({address, imageSrc}: Props) => {
             <CardBody className="main-b" style={{
                 paddingTop: 5
             }}>
-                <CardImg style={{border: "1px solid black"}} height="160" src={imageSrc} />
+                <CardImg className="CardImage" height="180" src={imageSrc} />
             </CardBody>
         </Card>
     )
