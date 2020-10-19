@@ -4,7 +4,12 @@ import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap"
 
 const MainNav = () => (
     <Navbar className="bb main-b" fixed="top">
-    <NavbarBrand href="/"><h3 style={{fontWeight: "bolder"}} className="sec-c">Tross Capital</h3></NavbarBrand>
+    <NavbarBrand href="/">
+      <div style={{display: "flex", alignItems: "center"}}>
+      <img height="35" src="logo.png" />
+      <h3 style={{fontWeight: "bolder", paddingLeft: "8px", marginBottom: "0"}} className="sec-c">Tross Capital</h3>
+      </div>
+    </NavbarBrand>
     <Nav>
       <NavItem>
         <NavLink>

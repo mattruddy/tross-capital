@@ -20,8 +20,10 @@ const Layout = ({ children, title = 'Tross Capital' }: Props) => (
     <div className="body main-b">
     {children}
     </div>
-    <footer className="footer main-b">
+    <footer className="footer">
+      <div className="footer">
       <i>Tross Capital LLC</i>
+      </div>
     </footer>
   </>
 )

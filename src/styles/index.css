@@ -1,6 +1,7 @@
 body {
   background:  #f8f8f8;
   font-family: "Roboto Slab", serif;
+  color: rgb(66, 66, 66);
 }
 
 .footer {
@@ -10,7 +11,7 @@ body {
   width: 100%;
   padding: .5rem 1rem;
   border-top: 1px solid rgba(0,0,0,.1);
-  background: white;
+  background: #f8f8f8;
   display: flex;
 }
 

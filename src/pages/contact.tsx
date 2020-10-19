@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react"
+import {  useState } from "react"
 import { Button, Card, CardBody, Container, Form, FormGroup, Input, Label } from "reactstrap"
 import Layout from "../components/Layout"
 
@@ -10,6 +10,11 @@ const ContactPage = () => {
     return (
         <Layout title="Tross Capital | Contact">
             <Container>
+                <div style={{padding: "16px"}}>
+                <h5><i>If you would like to send us information on property that meats our criteria, please 
+                    send us information</i></h5>
+                </div>
+
             <Card>
                 <CardBody>
                 <Form action={`mailto: mjruddy94@gmail.com?subject=${subject}&body=${message}`} method="POST">
