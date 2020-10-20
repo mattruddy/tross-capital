@@ -17,7 +17,7 @@ const BlogPage = () => {
                     method: "GET"
                 })
                 const json = await resp.json()
-                setBody(json.results[0].data.body.map(el => {
+                setBody(json.results[0].data.body.map((el: any) => {
                     return {
                     type: el.type,
                     text: el.text

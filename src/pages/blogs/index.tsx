@@ -19,7 +19,7 @@ const BlogsPage = () => {
         const json = await resp.json()
         const body = json.results[0].data.body
         const initItems = [] as Landing[]
-        body.forEach((section: any[]) => {
+        body.forEach((section: any) => {
             section.items.forEach((item: any) => {
                 if (item.series_posts) {
                     const data = item.series_posts.data
