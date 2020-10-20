@@ -47,24 +47,26 @@ const BlogPage = () => {
                 router.back()
             }}>Back</Button>
             <Container>
-            {title && <h1>{title}</h1>}
-            {body && body.map((el, i) => {
-            if (el.type === "paragraph") {
-            return <p key={i}>{el.text}</p>
-            } else if (el.type === "list-item") {
-            return <li key={i}>{el.text}</li>
-            } else if (el.type === "heading3") {
-            return <h3 key={i}>{el.text}</h3>
-            } else if (el.type === "heading2") {
-            return <h2 key={i}>{el.text}</h2>
-            } else if (el.type === "image") {
-                return <img height={el.image?.height} width={el.image?.width} src={el.image?.url} />
-            } else if (el.type === "preformatted") {
-                return <div dangerouslySetInnerHTML={{__html: el.text}} />
-            } else {
-            return <b key={i}>{el.text}</b>
-            }
-        })}
+                <div className="BlogPage">
+                {title && <h1>{title}</h1>}
+                    {body && body.map((el, i) => {
+                        if (el.type === "paragraph") {
+                        return <p key={i}>{el.text}</p>
+                        } else if (el.type === "list-item") {
+                        return <li key={i}>{el.text}</li>
+                        } else if (el.type === "heading3") {
+                        return <h3 key={i}>{el.text}</h3>
+                        } else if (el.type === "heading2") {
+                        return <h2 key={i}>{el.text}</h2>
+                        } else if (el.type === "image") {
+                            return <img height={el.image?.height} width={el.image?.width} src={el.image?.url} />
+                        } else if (el.type === "preformatted") {
+                            return <div dangerouslySetInnerHTML={{__html: el.text}} />
+                        } else {
+                        return <b key={i}>{el.text}</b>
+                }
+                })}
+                </div>
             </Container>
         </Layout>
     ) 

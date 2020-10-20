@@ -21,7 +21,7 @@ const Layout = ({ children, title = 'Tross Capital' }: Props) => (
     {children}
     </div>
     <footer className="footer">
-      <div className="footer">
+      <div>
       <i>Tross Capital LLC</i>
       </div>
     </footer>
