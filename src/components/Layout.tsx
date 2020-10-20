@@ -6,12 +6,13 @@ import { Branding } from '../utils/utils'
 type Props = {
   children?: ReactNode
   title?: string
+  metaTitle?: string
   description?: string
   image?: string
   url?: string
 }
 
-const Layout = ({ children, title = 'Tross Capital', description, image, url }: Props) => {
+const Layout = ({ children, title = 'Tross Capital', metaTitle, description, image, url }: Props) => {
   const defaultDescription = Branding.defaultDesciption
   const defaultImage = Branding.defaultLogo
   const defaultTitle = Branding.defaultTitle
@@ -31,7 +32,7 @@ const Layout = ({ children, title = 'Tross Capital', description, image, url }: 
         <meta name="theme-color" content="#fad961" />
         <meta
           property="og:title"
-          content={title ?? defaultTitle}
+          content={metaTitle ?? defaultTitle}
           key="og-title"
         />
         <meta property="og:type" content="article" />
@@ -48,7 +49,7 @@ const Layout = ({ children, title = 'Tross Capital', description, image, url }: 
         <meta property="og:url" content={url ?? defaultUrl} key="og-url" />
         <meta
           name="title"
-          content={title ?? "Progressive App Store"}
+          content={metaTitle ?? "Tross Capital"}
           key="title"
         />
         <meta
