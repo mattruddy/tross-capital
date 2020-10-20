@@ -14,7 +14,7 @@ const BlogPage = ({body, title}: DataProps) => {
     const router = useRouter()
 
     return (
-        <Layout description={body[0].text} title={title}>
+        <Layout description={body[0].text} metaTitle={title}>
             <Button onClick={(e) => {
                 e.preventDefault()
                 router.back()
