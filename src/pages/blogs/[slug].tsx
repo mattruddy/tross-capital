@@ -20,7 +20,6 @@ const BlogPage = () => {
                 })
                 const json = await resp.json()
                 const bod = json.results[0].data.body
-                console.log(bod)
                 setBody(bod.map((el: any) => {
                     return {
                     type: el.type,
@@ -35,10 +34,6 @@ const BlogPage = () => {
             }
         })()
     }, [slug])
-
-    useEffect(() => {
-        // console.log(body)
-    }, [body])
 
     return (
         <Layout>
@@ -59,9 +54,9 @@ const BlogPage = () => {
                         } else if (el.type === "heading2") {
                         return <h2 key={i}>{el.text}</h2>
                         } else if (el.type === "image") {
-                            return <img height={el.image?.height} width={el.image?.width} src={el.image?.url} />
+                            return <img key={i} height={el.image?.height} width={el.image?.width} src={el.image?.url} />
                         } else if (el.type === "preformatted") {
-                            return <div dangerouslySetInnerHTML={{__html: el.text}} />
+                            return <div key={i} dangerouslySetInnerHTML={{__html: el.text}} />
                         } else {
                         return <b key={i}>{el.text}</b>
                 }

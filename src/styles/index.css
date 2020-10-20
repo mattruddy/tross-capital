@@ -14,7 +14,7 @@ body {
 }
 
 .body {
-  margin-top: 75px;
+  margin-top: 95px;
   margin-bottom: 85px;
 }
 
@@ -56,8 +56,8 @@ ul {
   padding: 0 !important;
 }
 
-.BlogPage {
-  padding: 16px;
+.container {
+  margin-top: 16px;
   border-radius: 3px;
   -moz-box-shadow: 1px 1px 8px #686868;
   -webkit-box-shadow: 1px 1px 8px #686868;
@@ -66,4 +66,8 @@ ul {
 
 img {
   max-width: 100% !important;
+}
+
+.card {
+  margin-top: 24px !important;
 }

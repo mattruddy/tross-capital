@@ -9,7 +9,7 @@ interface Props {
 
 const BlogInfoCard = ({ title, body, slug}: Props) => {
     return (
-        <Card style={{height: "250px", width: "300px"}}>
+        <Card style={{height: "350px", width: "300px", overflow: "hidden"}}>
             <CardHeader>
                 <CardTitle><Link href={`/blogs/${slug}`}>{title}</Link></CardTitle>
             </CardHeader>

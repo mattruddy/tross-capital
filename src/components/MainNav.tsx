@@ -12,32 +12,26 @@ const MainNav = () => (
     </NavbarBrand>
     <Nav>
       <NavItem>
-        <NavLink>
-        <Link href="/">
-          Home
+        <Link href="/" passHref>
+          <NavLink>
+            Home
+          </NavLink>
         </Link>
-        </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink>
-        <Link href="/about">
-          About
+        <Link href="/about" passHref>
+          <NavLink>About</NavLink>
         </Link>
-        </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink>
-        <Link href="/blogs">
-          Blogs
+        <Link href="/blogs" passHref>
+          <NavLink>Blogs</NavLink>
         </Link>
-        </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink>
-        <Link href="/contact">
-          Contact
+        <Link href="/contact" passHref>
+          <NavLink>Contact</NavLink>
         </Link>
-        </NavLink>
       </NavItem>
     </Nav>
   </Navbar>

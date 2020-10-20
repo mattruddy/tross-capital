@@ -42,7 +42,7 @@ const BlogsPage = () => {
                 <h1>Blogs</h1>
             <Row>
             {items && items.map((item, i) => 
-            <Col size={3} key={i}>
+            <Col xs={12} md={6} lg={4} key={i}>
                 <BlogInfoCard title={item.title} body={item.desc} slug={item.slug} />
             </Col>)}
             </Row>
