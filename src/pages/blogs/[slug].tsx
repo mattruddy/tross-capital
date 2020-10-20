@@ -1,39 +1,17 @@
+import { GetServerSideProps } from 'next'
 import {useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
 import { Button, Container } from 'reactstrap'
 import Layout from '../../components/Layout'
 import { Body, Image } from '../../interfaces'
 import { blogUrlSlug } from '../../utils/utils'
 
-const BlogPage = () => {
+interface DataProps {
+    body: Body[]
+    title: string
+}
+
+const BlogPage = ({body, title}: DataProps) => {
     const router = useRouter()
-    const {slug} = router.query
-
-    const [body, setBody] = useState<Body[]>()
-    const [title, setTitle] = useState<string>()
-
-    useEffect(() => {
-        ;(async() => {
-            if (slug) {
-                const resp = await fetch(blogUrlSlug(slug as string), {
-                    method: "GET"
-                })
-                const json = await resp.json()
-                const bod = json.results[0].data.body
-                setBody(bod.map((el: any) => {
-                    return {
-                    type: el.type,
-                    text: el.text,
-                    image: el.type === "image" ? { 
-                        url: el.url,
-                        height: el.dimensions.height,
-                        width: el.dimensions.width
-                    } as Image : undefined
-                } as Body}))
-                setTitle(json.results[0].data.title)
-            }
-        })()
-    }, [slug])
 
     return (
         <Layout>
@@ -65,6 +43,44 @@ const BlogPage = () => {
             </Container>
         </Layout>
     ) 
+}
+
+export const getServerSideProps: GetServerSideProps<DataProps> = async (
+    context: any
+) => {
+    if (context.params && context.params.slug && context.params.slug !== "logo.png") {
+        try {
+            const slug = context.params.slug
+            const resp = await fetch(blogUrlSlug(slug as string), {
+                method: "GET"
+            })
+            const json = await resp.json()
+            const bod = json.results[0].data.body
+            const body = bod.map((el: any) => {
+                return {
+                type: el.type,
+                text: el.text ? el.text : null,
+                image: el.type === "image" && { 
+                    url: el.url,
+                    height: el.dimensions.height,
+                    width: el.dimensions.width
+                } as Image
+            } as Body})
+            const title = json.results[0].data.title
+            return {
+                props: {
+                    body: body,
+                    title: title
+                } as DataProps
+            }
+
+        } catch(e) {
+            console.log(e)
+        }
+    }
+    return {
+        props: {} as DataProps
+    }
 }
 
 export default BlogPage

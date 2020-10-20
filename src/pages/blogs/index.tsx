@@ -1,9 +1,14 @@
+import { GetServerSideProps } from "next"
 import { useEffect, useState } from "react"
 import { Col, Container, Row } from "reactstrap"
 import BlogInfoCard from "../../components/BlogInfoCard"
 import Layout from "../../components/Layout"
 import { Landing } from "../../interfaces"
 import { blogUrl } from "../../utils/utils"
+
+interface DataProps {
+
+}
 
 const BlogsPage = () => {
     const [items, setItems] = useState<Landing[]>()
@@ -49,6 +54,17 @@ const BlogsPage = () => {
             </Container>
         </Layout>
     )
+}
+
+export const getServerSideProps: GetServerSideProps<DataProps> = async (
+    context: any
+) => {
+    if (context.params && context.params.id) {
+        console.log(context)
+    }
+    return {
+        props: {} as DataProps
+    }
 }
 
 export default BlogsPage
