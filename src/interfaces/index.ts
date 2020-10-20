@@ -19,4 +19,11 @@ export type Landing = {
 export type Body = {
     type: string 
     text: string
+    image: Image | undefined
+}
+
+export type Image = {
+    url: string
+    height: number 
+    width: number
 }

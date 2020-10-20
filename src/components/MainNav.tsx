@@ -14,28 +14,28 @@ const MainNav = () => (
       <NavItem>
         <NavLink>
         <Link href="/">
-          <a>Home</a>
+          Home
         </Link>
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink>
         <Link href="/about">
-          <a>About</a>
+          About
         </Link>
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink>
         <Link href="/blogs">
-          <a>Blogs</a>
+          Blogs
         </Link>
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink>
         <Link href="/contact">
-          <a>Contact</a>
+          Contact
         </Link>
         </NavLink>
       </NavItem>

@@ -1,5 +1,6 @@
-import Link from "next/link"
 import { useEffect, useState } from "react"
+import { Col, Container, Row } from "reactstrap"
+import BlogInfoCard from "../../components/BlogInfoCard"
 import Layout from "../../components/Layout"
 import { Landing } from "../../interfaces"
 import { blogUrl } from "../../utils/utils"
@@ -37,11 +38,15 @@ const BlogsPage = () => {
 
     return (
         <Layout title="Tross Capital | Blogs">
+            <Container>
+                <h1>Blogs</h1>
+            <Row>
             {items && items.map((item, i) => 
-            <div key={i}>
-                <Link href={`/blogs/${item.slug}`}><h3>{item.title}</h3></Link>
-                <p>{item.desc}</p>
-            </div>)}
+            <Col size={3} key={i}>
+                <BlogInfoCard title={item.title} body={item.desc} slug={item.slug} />
+            </Col>)}
+            </Row>
+            </Container>
         </Layout>
     )
 }
