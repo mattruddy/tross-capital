@@ -9,3 +9,14 @@ export type Property = {
     image: string
     desc: string
 }
+
+export type Landing = {
+    title: string
+    desc: string
+    slug: string
+}
+
+export type Body = {
+    type: string 
+    text: string
+}

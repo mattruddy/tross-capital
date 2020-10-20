@@ -27,6 +27,13 @@ const MainNav = () => (
       </NavItem>
       <NavItem>
         <NavLink>
+        <Link href="/blogs">
+          <a>Blogs</a>
+        </Link>
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink>
         <Link href="/contact">
           <a>Contact</a>
         </Link>
