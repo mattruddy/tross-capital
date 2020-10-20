@@ -13,7 +13,7 @@ const BlogPage = () => {
     useEffect(() => {
         ;(async() => {
             if (slug) {
-                const resp = await fetch(blogUrlSlug(slug), {
+                const resp = await fetch(blogUrlSlug(slug as string), {
                     method: "GET"
                 })
                 const json = await resp.json()
