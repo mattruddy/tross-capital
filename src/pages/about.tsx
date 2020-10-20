@@ -7,7 +7,7 @@ const AboutPage = () => (
       <Row>
 
       <Col>
-      <div style={{padding: "16px"}}>
+      <div style={{paddingLeft: "16px", paddingRight: "16px"}}>
         <h1>About</h1>
         <p>
           Back in 1986, Thomas Ruddy created Mountain Creak Partners and 
@@ -49,10 +49,6 @@ const AboutPage = () => (
                 </li>
                 <li>
                   <b>Software Engineer - Mastercard</b>, optimizing and innovating payment technologies
-                </li>
-                <li>
-                </li>
-                <li>
                 </li>
               </ul>
               </div>
