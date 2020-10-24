@@ -37,6 +37,10 @@ body {
   .b-img {
     background-image: url("/mobile-init.jpg") !important;
   }
+
+  .spacer {
+    display: none;
+  }
 }
 
 .bb {
