@@ -6,7 +6,7 @@ interface Props {
 const SectionHeader = ({title}: Props) => {
     return (
         <div className="SectionHeader">
-            <h4 className="sec-c">{title}</h4>
+            <h4>{title}</h4>
         </div>
     )
 }

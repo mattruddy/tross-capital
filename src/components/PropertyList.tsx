@@ -10,14 +10,19 @@ interface Props {
 }
 
 const PropertyList = ({title, properties}: Props) => {
-    return <div>
+    return <div style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center"
+    }}>
         <SectionHeader title={title} />
         <Row>
             {properties.length > 0 ? properties.map((property, i) => (
-                <Col xs={12} md={6} lg={4} key={i}>
+                <Col xs={12} key={i}>
                     <PropertyCard address={property.address} imageSrc={property.image} desc={property.desc} />
                 </Col>
-            )) : <i style={{marginLeft: "32px"}}>Soon to come</i>}
+            )) : <i>Soon to come</i>}
         </Row>
     </div>
 }

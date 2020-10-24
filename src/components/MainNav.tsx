@@ -15,14 +15,14 @@ const MainNav = () => (
     <Nav>
       <NavItem>
         <Link href="/" passHref>
-          <NavLink>
-            Home
-          </NavLink>
+          <NavLink>About</NavLink>
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="/about" passHref>
-          <NavLink>About</NavLink>
+        <Link href="/portfolio" passHref>
+          <NavLink>
+            Portfolio
+          </NavLink>
         </Link>
       </NavItem>
       <NavItem>

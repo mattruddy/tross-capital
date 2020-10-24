@@ -10,6 +10,7 @@ const ContactPage = () => {
     return (
         <Layout title="Tross Capital | Contact">
             <Container>
+                <h1>Contact</h1>
                 <div style={{padding: "16px"}}>
                 <h5><i>If you would like to send us information on property that meats our criteria, please 
                     send us information</i></h5>

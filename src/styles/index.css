@@ -1,5 +1,5 @@
 body {
-  background:  #f8f8f8;
+  background:  #484848;
   font-family: "Roboto Slab", serif;
   color: rgb(66, 66, 66);
 }
@@ -8,9 +8,10 @@ body {
   height: 80px;
   width: 100%;
   padding: .5rem 1rem;
-  border-top: 1px solid rgba(0,0,0,.1);
-  background: #f8f8f8;
+  border-top: 1px solid #787878	;
+  background: #484848;
   display: flex;
+  color: #F5F5F5;
 }
 
 .body {
@@ -26,7 +27,7 @@ body {
 }
 
 .bb {
- border-bottom: 1px solid rgba(0,0,0,.1);
+ border-bottom: 1px solid #787878;
 }
 
 .SectionHeader {
@@ -36,14 +37,15 @@ body {
   display: flex;
   align-items: center;
   height: 40px;
+  justify-content: center;
 }
 
 .main-b {
-  background: #f8f8f8;
+  background: #484848;
 }
 
 .sec-c {
-  color: rgb(66, 66, 66);
+  color: #F5F5F5;
 }
 
 a {
@@ -70,9 +72,9 @@ ul {
   padding-top: 16px;
   padding-bottom: 32px;
   border-radius: 3px;
-  -moz-box-shadow: 1px 1px 8px #686868;
-  -webkit-box-shadow: 1px 1px 8px #686868;
-  box-shadow: 1px 1px 8px #686868	;
+  -moz-box-shadow: 1px 1px 8px #F5F5F5;
+  -webkit-box-shadow: 1px 1px 8px #F5F5F5;
+  box-shadow: 1px 1px 8px #F5F5F5	;
   background: #F5F5F5;
 }
 
@@ -80,6 +82,9 @@ img {
   max-width: 100% !important;
 }
 
-.card {
-  margin-top: 24px !important;
+.AboutMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

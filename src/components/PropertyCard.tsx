@@ -10,23 +10,17 @@ interface Props {
 const PropertyCard = ({address, imageSrc, desc}: Props) => {
     return (
         <Card style={{
-            height: "280px",
+            height: "300px",
             width: "300px",
             marginBottom: "16px",
             border: "none"
         }}>
-            <CardHeader className="main-b" style={{
-                border: "none"
-            }}>
-                <CardImg className="CardImage" height="180" src={imageSrc} />
-            </CardHeader>
-            <CardBody className="main-b" style={{
-                paddingTop: 5
-            }}>
-                                <CardTitle className="sec-c" style={{fontWeight: "bold"}}>
+            <CardBody>
+            <CardImg className="CardImage" height="180" src={imageSrc} />
+                <CardTitle style={{fontWeight: "bold", marginTop: "8px"}}>
                     {address}
                 </CardTitle>
-        <CardSubtitle className="sec-c"><i>{desc}</i></CardSubtitle>
+        <CardSubtitle><i>{desc}</i></CardSubtitle>
             </CardBody>
         </Card>
     )
