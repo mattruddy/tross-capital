@@ -43,6 +43,7 @@ const BlogsPage = () => {
 
     return (
         <Layout title="Tross Capital | Blogs">
+            <div className="spacer" />
             <Container>
                 <h1>Blogs</h1>
             <Row>

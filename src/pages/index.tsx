@@ -3,9 +3,16 @@ import Layout from '../components/Layout'
 
 const AboutPage = () => (
   <Layout title="Tross Capital | About">
+    <div style={{background: "black"}}>
+      <img className="main-photo fade-in" src="/init.jpg" />
+    </div>
+    <div className="main-text">
+      <h1 className="fade-in-md">About Us</h1>
+      <h5 className="fade-in-lg"><i>Who We Are</i></h5>
+    </div>
+    <div className="spacer" />
     <Container>
       <Row>
-
       <Col>
       <div style={{paddingLeft: "16px", paddingRight: "16px"}}>
         <h1>About</h1>

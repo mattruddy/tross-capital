@@ -1,0 +1,19 @@
+@import "./fade-in.css";
+
+.fade-in {
+  -webkit-animation: fade-in 0.3s linear forwards;
+  animation: fade-in 0.3s linear forwards;
+  opacity: 0;
+}
+
+.fade-in-md {
+  -webkit-animation: fade-in 1.3s linear forwards;
+  animation: fade-in 1.3s linear forwards;
+  opacity: 0;
+}
+
+.fade-in-lg {
+  -webkit-animation: fade-in 2.5s linear forwards;
+  animation: fade-in 2.5s linear forwards;
+  opacity: 0;
+}

@@ -9,6 +9,7 @@ import commercialProperties from '../utils/commercial-properties.json'
 
 const Portfolio = () => (
   <Layout title="Tross Capital">  
+    <div className="spacer" />
     <Container>
       <h1>Portfolio</h1>
       <Row>

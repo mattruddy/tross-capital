@@ -15,6 +15,7 @@ const BlogPage = ({body, title}: DataProps) => {
 
     return (
         <Layout description={body && body[0].text} metaTitle={title}>
+            <div className="spacer" />
             <Button onClick={(e) => {
                 e.preventDefault()
                 router.back()

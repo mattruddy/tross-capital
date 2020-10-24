@@ -9,6 +9,7 @@ const ContactPage = () => {
 
     return (
         <Layout title="Tross Capital | Contact">
+            <div className="spacer" />
             <Container>
                 <h1>Contact</h1>
                 <div style={{padding: "16px"}}>

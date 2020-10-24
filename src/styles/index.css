@@ -1,5 +1,5 @@
 body {
-  background:  #484848;
+  background: #484848;
   font-family: "Roboto Slab", serif;
   color: rgb(66, 66, 66);
 }
@@ -7,16 +7,20 @@ body {
 .footer {
   height: 80px;
   width: 100%;
-  padding: .5rem 1rem;
-  border-top: 1px solid #787878	;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #787878;
   background: #484848;
   display: flex;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 .body {
-  margin-top: 95px;
+  margin-top: 80px;
   margin-bottom: 85px;
+}
+
+.spacer {
+  height: 30px;
 }
 
 @media (max-width: 576px) {
@@ -24,10 +28,14 @@ body {
     margin-top: 135px;
     margin-bottom: 0px;
   }
+
+  .main-text {
+    top: 14rem;
+  }
 }
 
 .bb {
- border-bottom: 1px solid #787878;
+  border-bottom: 1px solid #787878;
 }
 
 .SectionHeader {
@@ -45,7 +53,7 @@ body {
 }
 
 .sec-c {
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 a {
@@ -61,7 +69,7 @@ ul {
   border-radius: 3px;
   -moz-box-shadow: 1px 1px 8px #686868;
   -webkit-box-shadow: 1px 1px 8px #686868;
-  box-shadow: 1px 1px 8px #686868	;
+  box-shadow: 1px 1px 8px #686868;
 }
 
 .col {
@@ -72,10 +80,10 @@ ul {
   padding-top: 16px;
   padding-bottom: 32px;
   border-radius: 3px;
-  -moz-box-shadow: 1px 1px 8px #F5F5F5;
-  -webkit-box-shadow: 1px 1px 8px #F5F5F5;
-  box-shadow: 1px 1px 8px #F5F5F5	;
-  background: #F5F5F5;
+  -moz-box-shadow: 1px 1px 8px #f5f5f5;
+  -webkit-box-shadow: 1px 1px 8px #f5f5f5;
+  box-shadow: 1px 1px 8px #f5f5f5;
+  background: #f5f5f5;
 }
 
 img {
@@ -88,3 +96,17 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.main-photo {
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+.main-text {
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+  color: #f5f5f5;
+}
+
+
