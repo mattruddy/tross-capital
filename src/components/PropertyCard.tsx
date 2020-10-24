@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, CardHeader, CardImg, CardSubtitle, CardTitle } from 'reactstrap'
+import { Card, CardBody, CardImg, CardSubtitle, CardTitle } from 'reactstrap'
 
 interface Props {
     address: string
