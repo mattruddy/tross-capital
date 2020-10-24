@@ -4,6 +4,7 @@ import { Button, Container } from 'reactstrap'
 import Layout from '../../components/Layout'
 import { Body, Image } from '../../interfaces'
 import { blogUrlSlug } from '../../utils/utils'
+import { AiOutlineArrowLeft } from 'react-icons/ai'
 
 interface DataProps {
     body: Body[]
@@ -16,11 +17,11 @@ const BlogPage = ({body, title}: DataProps) => {
     return (
         <Layout description={body && body[0].text} metaTitle={title}>
             <div className="spacer" />
+            <Container>
             <Button onClick={(e) => {
                 e.preventDefault()
                 router.back()
-            }}>Back</Button>
-            <Container>
+            }}><AiOutlineArrowLeft /></Button>
                 <div className="BlogPage">
                 {title && <h1>{title}</h1>}
                     {body && body.map((el, i) => {

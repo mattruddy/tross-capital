@@ -16,20 +16,22 @@ const BlogsPage = ({items}: DataProps) => {
             <div className="spacer" />
             {items && <Container>
                 <h1>Blogs</h1>
-                <div style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "center",
-                            alignItems: "center"
-                }}>
+
                 <Row>
             {items.map((item, i) => 
             <Col xs={12} md={6} lg={4} key={i}>
+                                            <div style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                marginTop: "16px"
+                    }}>
                 <BlogInfoCard title={item.title} body={item.desc} slug={item.slug} />
-            </Col>)}
+                    </div>
+            </Col>
+            )}
             </Row>
-                </div>
-
             </Container>}
         </Layout>
     )
