@@ -18,6 +18,13 @@ body {
   margin-bottom: 85px;
 }
 
+@media (max-width: 576px) {
+  .body {
+    margin-top: 135px;
+    margin-bottom: 0px;
+  }
+}
+
 .bb {
  border-bottom: 1px solid rgba(0,0,0,.1);
 }
