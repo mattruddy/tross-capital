@@ -1,4 +1,4 @@
-import { Card, CardBody, CardHeader, CardSubtitle, CardTitle, Col, Container, Row } from 'reactstrap'
+import { Card, CardBody, Col, Container, Row } from 'reactstrap'
 import Layout from '../components/Layout'
 
 const AboutPage = () => (
