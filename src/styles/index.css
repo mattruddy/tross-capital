@@ -32,6 +32,7 @@ body {
 
   .main-text {
     top: 10rem !important;
+    left: 2rem !important;
   }
 
   .b-img {
@@ -40,6 +41,10 @@ body {
 
   .spacer {
     display: none;
+  }
+
+  .blog-img {
+    min-width: 100% ;
   }
 }
 
