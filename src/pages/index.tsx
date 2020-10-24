@@ -3,8 +3,7 @@ import Layout from '../components/Layout'
 
 const AboutPage = () => (
   <Layout title="Tross Capital">
-    <div style={{background: "black"}}>
-      <img className="main-photo fade-in" src="/init.jpg" />
+    <div className="b-img main-photo fade-in">
     </div>
     <div className="main-text">
       <h1 className="fade-in-md">About Us</h1>
