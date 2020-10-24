@@ -93,7 +93,7 @@ const Layout = ({ children, title = 'Tross Capital', metaTitle, description, ima
     <header>
       <MainNav />
     </header>
-    <div className="body main-b">
+    <div className="body">
     {children}
     </div>
     <footer className="footer">

@@ -7,7 +7,7 @@ const MainNav = () => (
       <Link href="/" passHref>
       <NavbarBrand>
         <div style={{display: "flex", alignItems: "center"}}>
-        <img height="35" src="/logo.png" />
+        <img height="55" width="55" src="/logo.png" />
         <h3 style={{fontWeight: "bolder", paddingLeft: "8px", marginBottom: "0"}} className="sec-c">Tross Capital</h3>
         </div>
       </NavbarBrand>

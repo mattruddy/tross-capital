@@ -26,6 +26,9 @@ body {
   width: 100%;
   padding: 8px;
   height: 60px;
+  display: flex;
+  align-items: center;
+  height: 40px;
 }
 
 .main-b {
@@ -63,6 +66,7 @@ ul {
   -moz-box-shadow: 1px 1px 8px #686868;
   -webkit-box-shadow: 1px 1px 8px #686868;
   box-shadow: 1px 1px 8px #686868	;
+  background: #F5F5F5;
 }
 
 img {

@@ -55,6 +55,7 @@ export const getServerSideProps: GetServerSideProps<DataProps> = async (
                 method: "GET"
             })
             const json = await resp.json()
+            console.log(json)
             const bod = json.results[0].data.body
             const body = bod.map((el: any) => {
                 return {

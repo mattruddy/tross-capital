@@ -4,6 +4,7 @@ import PropertyList from '../components/PropertyList'
 import { Property} from '../interfaces'
 import studentProperties from '../utils/student-properties.json' 
 import mobileProperties from '../utils/mobile-properties.json'
+import commercialProperties from '../utils/commercial-properties.json'
 
 
 const IndexPage = () => (
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <Container>
       <PropertyList title="Student Housing" properties={studentProperties as Property[]} />
       <PropertyList title="Mobile Home Parks" properties={mobileProperties as Property[]} />
+      <PropertyList title="Commercial" properties={commercialProperties as Property[]} />
       <PropertyList title="Recreational" properties={[]} />
     </Container>
   </Layout>

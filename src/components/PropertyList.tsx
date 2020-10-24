@@ -17,7 +17,7 @@ const PropertyList = ({title, properties}: Props) => {
                 <Col xs={12} md={6} lg={4} key={i}>
                     <PropertyCard address={property.address} imageSrc={property.image} desc={property.desc} />
                 </Col>
-            )) : <i style={{marginLeft: "32px"}}>Coming soon</i>}
+            )) : <i style={{marginLeft: "32px"}}>Soon to come</i>}
         </Row>
     </div>
 }
