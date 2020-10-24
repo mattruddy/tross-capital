@@ -1,5 +1,4 @@
 import { GetServerSideProps } from "next"
-import { useEffect, useState } from "react"
 import { Col, Container, Row } from "reactstrap"
 import BlogInfoCard from "../../components/BlogInfoCard"
 import Layout from "../../components/Layout"
@@ -7,17 +6,37 @@ import { Landing } from "../../interfaces"
 import { blogUrl } from "../../utils/utils"
 
 interface DataProps {
-
+    items: Landing[]
 }
 
-const BlogsPage = () => {
-    const [items, setItems] = useState<Landing[]>()
+const BlogsPage = ({items}: DataProps) => {
 
-    useEffect(() => {
-        getData()
-    }, [])
+    return (
+        <Layout title="Tross Capital | Blogs">
+            <div className="spacer" />
+            {items && <Container>
+                <h1>Blogs</h1>
+                <div style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "center"
+                }}>
+                <Row>
+            {items.map((item, i) => 
+            <Col xs={12} md={6} lg={4} key={i}>
+                <BlogInfoCard title={item.title} body={item.desc} slug={item.slug} />
+            </Col>)}
+            </Row>
+                </div>
 
-    const getData = async () => {
+            </Container>}
+        </Layout>
+    )
+}
+
+export const getServerSideProps: GetServerSideProps<DataProps> = async () => {
+    try {
         const resp = await fetch(blogUrl("blog_landing"), {
             method: "GET"
         })
@@ -38,30 +57,11 @@ const BlogsPage = () => {
                 }
             })
         });
-        setItems(initItems)
-    }
-
-    return (
-        <Layout title="Tross Capital | Blogs">
-            <div className="spacer" />
-            <Container>
-                <h1>Blogs</h1>
-            <Row>
-            {items && items.map((item, i) => 
-            <Col xs={12} md={6} lg={4} key={i}>
-                <BlogInfoCard title={item.title} body={item.desc} slug={item.slug} />
-            </Col>)}
-            </Row>
-            </Container>
-        </Layout>
-    )
-}
-
-export const getServerSideProps: GetServerSideProps<DataProps> = async (
-    context: any
-) => {
-    if (context.params && context.params.id) {
-        console.log(context)
+        return {
+            props: {items: initItems} as DataProps
+        }
+    } catch (e) {
+        console.log(e)
     }
     return {
         props: {} as DataProps

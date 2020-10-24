@@ -98,7 +98,7 @@ const Layout = ({ children, title = 'Tross Capital', metaTitle, description, ima
     </div>
     <footer className="footer">
       <div>
-      <i>Tross Capital LLC</i>
+      <i>&#169;	Tross Capital LLC</i>
       </div>
     </footer>
   </>

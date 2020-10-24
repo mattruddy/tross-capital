@@ -17,6 +17,7 @@ body {
 .body {
   margin-top: 80px;
   margin-bottom: 85px;
+  min-height: 100vh;
 }
 
 .spacer {
@@ -90,6 +91,12 @@ img {
   max-width: 100% !important;
 }
 
+.blog-img {
+  max-height: 60vh !important;
+  max-width: 50vw !important;
+  margin-bottom: 16px;
+}
+
 .AboutMore {
   display: flex;
   flex-direction: column;
@@ -109,4 +116,13 @@ img {
   color: #f5f5f5;
 }
 
+.BlogPage {
+  padding: 16px
+}
+
+.bs {
+  -moz-box-shadow: 1px 1px 8px #f5f5f5;
+  -webkit-box-shadow: 1px 1px 8px #f5f5f5;
+  box-shadow: 1px 1px 8px #f5f5f5;
+}
 

@@ -2,7 +2,7 @@ import { Card, CardBody, Col, Container, Row } from 'reactstrap'
 import Layout from '../components/Layout'
 
 const AboutPage = () => (
-  <Layout title="Tross Capital | About">
+  <Layout title="Tross Capital">
     <div style={{background: "black"}}>
       <img className="main-photo fade-in" src="/init.jpg" />
     </div>

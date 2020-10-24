@@ -27,13 +27,13 @@ const BlogPage = ({body, title}: DataProps) => {
                         if (el.type === "paragraph") {
                         return <p key={i}>{el.text}</p>
                         } else if (el.type === "list-item") {
-                        return <li key={i}>{el.text}</li>
+                        return <li style={{marginLeft: "32px", marginRight: "32px"}} key={i}>{el.text}</li>
                         } else if (el.type === "heading3") {
                         return <h3 key={i}>{el.text}</h3>
                         } else if (el.type === "heading2") {
                         return <h2 key={i}>{el.text}</h2>
                         } else if (el.type === "image") {
-                            return <img key={i} height={el.image?.height} width={el.image?.width} src={el.image?.url} />
+                            return <img key={i} className="blog-img" height={el.image?.height} width={el.image?.width} src={el.image?.url} />
                         } else if (el.type === "preformatted") {
                             return <div key={i} dangerouslySetInnerHTML={{__html: el.text}} />
                         } else {
@@ -56,7 +56,6 @@ export const getServerSideProps: GetServerSideProps<DataProps> = async (
                 method: "GET"
             })
             const json = await resp.json()
-            console.log(json)
             const bod = json.results[0].data.body
             const body = bod.map((el: any) => {
                 return {
