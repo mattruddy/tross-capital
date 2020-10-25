@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import { Card, CardBody, Col, Container, Row } from 'reactstrap'
 import Layout from '../components/Layout'
 import { mission } from '../utils/utils'
 
 const AboutPage = () => (
-  <Layout title="Tross Capital" metaTitle="Who We Are" description={mission}>
+  <Layout title="Tross Capital" metaTitle="Tross Capital - Who We Are" description={mission}>
     <div className="b-img main-photo fade-in">
     </div>
     <div className="main-text">
@@ -23,28 +24,29 @@ const AboutPage = () => (
           Estate since early 2014. Over the years, a great relationship has been build up with lenders across 
           the country due to our excellent investment reputation. The key to our success is keeping it simple, we do 
           not waste time searching for the best deals on the market, but rather, developed a curtain 
-          buying criteria for properties with long term asset and. If a property matches our 
+          buying criteria for properties and hold them for the long-term. If a property matches our 
           criteria at a fair price, we will close quickly and move on to the next.
         </p>
         <p>
           {/* tech developed */}
           Tross Capital takes a lot of pride in its technology team. It is one of the 
           only Real Estate firms to also compete in the Financial Technology space. Our engineering team works 
-          extensively on developing advanced algorithms using <b>Artificial Intelligence</b> and 
+          extensively on building advanced algorithms using <b>Artificial Intelligence</b> and 
           <b> Machine Learning</b> to help the company 
-          forecast investments for the long-term. This is a very important aspect, as it analyzes terabytes of demographics 
+          forecast investments for its long-term investments. This is a very important aspect, as it analyzes terabytes of demographics 
           data to detect areas on the rise and with tremendous growth potential. It is a crucial component for our decision making 
           process.
         </p>
         <p>
           {/* profits */}
-          The company is always open to taking on new project and investors.  does not target specifi
-          After recognizing the profit potential on properties 
-          discovered using his algorithm, Matthew began his Real Estate investing career transacting
-          properties with large cap rates and low maintenance. <b>Tross Capital LLC</b> The company was then partnered with his 
-          father who is also a long time real estate investor. The company is a multi-generation family operation, over the years has 
-          has developed a great reputation and relationship with lenders which allow us to move 
-          very quickly when finding investments that match our buying criteria. 
+          The company is always open to taking on new project and investors. The passion of members 
+          on the team on the Real Estate market is off the charts as they often host local events 
+          to discuss upcoming trends, growing industries and guest speakers. The company enjoys 
+          helping and connecting with people all around the country with similar interests. Tross Capital 
+          takes a lot of pride in their diverse portfolio
+          and are never afraid to take on any project that catches their eye. Feel free to  
+          <Link href="/contact"> contact us</Link> if you have a property you would like to sell or 
+          are a potential investor.
         </p>
         <h5><i>Mission</i></h5>
         <p>{mission} 
