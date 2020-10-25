@@ -17,27 +17,35 @@ const AboutPage = () => (
         <h1>About</h1>
         <h5><i>Who We Are</i></h5>
         <p>
-          Back in 1986, Thomas Ruddy created Mountain Creak Partners and 
-          began his investing career purchasing 
-          residential and multi-family Real Estate. Thomas had a kean eye for seeing 
-          potential in under developed areas. He purchased homes that have gone up in value 
-          upwards to <b>850%</b>.  
-          Matthew Ruddy began his career working at Mastercard as 
-          Software Development Engineer working on optomizing and innovating 
-          new technologies for payment networking on large transactions.
+          {/* background */}
+          The founder Matthew has acquired, transacted and managed everything from Multifamily, Residential and Commercial Real 
+          Estate since early 2014. Over the years, a great relationship has been build up with lenders across 
+          the country due to our excellent investment reputation. The key to our success is keeping it simple, we do 
+          not waste time getting the best deal on a property but rather take the mentality approach of the 
+          great philosopher Voltaire "Perfect, is the enemy of good", if we find a good deal, we will offer a fair 
+          price, close quickly and move on to the next.
         </p>
         <p>
-          Matthew grew a fascination in Real Estate and used his technological background to develop 
-          an algorithm based tool to discover profitable Real Estate investments using the most advanced 
-          <b> Machine Learning</b> and <b>Artificial Intelligence</b> technologies.
+          {/* tech developed */}
+          Tross Capital takes a lot of pride in its technology team. It is one of the 
+          only Real Estate firms to also compete in the Financial Technology space. Our engineering team works 
+          extensively on developing advanced algorithms using Artificial Intelligence and Machine Learning to help the company 
+          forecast investments for the long term. This is a very important aspect as it analyzes demographics for 
+          tracking up and coming areas with tremendous growth potential.
         </p>
         <p>
+          {/* profits */}
+          The company does not target specifi
           After recognizing the profit potential on properties 
           discovered using his algorithm, Matthew began his Real Estate investing career transacting
-          properties with large cap rates and low maintenance. <b>Tross Capital LLC</b> was formed in 2020 and merged 
-          with Mountain Creak Partners. The company is now a multi-generation family operation, over the years we 
-          have developed a great reputation and relationship with lenders which allow us to move 
+          properties with large cap rates and low maintenance. <b>Tross Capital LLC</b> The company was then partnered with his 
+          father who is also a long time real estate investor. The company is a multi-generation family operation, over the years has 
+          has developed a great reputation and relationship with lenders which allow us to move 
           very quickly when finding investments that match our buying criteria. 
+        </p>
+        <h5><i>Mission</i></h5>
+        <p>We provide use our technology and financial abilities to provide excellent ROI for our investors. We priorities long term,
+          stable properties with high capital rates and 
         </p>
         </div>
       </Col>
@@ -48,14 +56,14 @@ const AboutPage = () => (
           <h6 style={{fontSize: "18px"}}><i>President</i></h6>
           <img height="230" width="220" className="CardImage" src={"portrait.png"} />
               <ul>
+              <li>
+                  <b>Pennsylvania State University Graduate</b> - Financial Engineering
+                </li>
                 <li>
                   <b>Pennsylvania Manufactured Housing Association</b> - Active Member
                 </li>
                 <li>
                   <b>Product Engineer at Mastercard</b> - Payment Transactions
-                </li>
-                <li>
-                  <b>Pennsylvania State University Graduate</b> - Financial Engineering
                 </li>
               </ul>
               </div>
@@ -65,7 +73,7 @@ const AboutPage = () => (
     <Container style={{marginTop: "24px"}}>
       <Row>
       <Col sm={12} md={4}>
-          <Card>
+          <Card style={{marginTop: "16px"}}>
             <CardBody>
               <div className="AboutMore">
                 <h2>$2MM</h2>
@@ -75,7 +83,7 @@ const AboutPage = () => (
           </Card>
         </Col>
         <Col sm={12} md={4}>
-          <Card>
+          <Card style={{marginTop: "16px"}}>
             <CardBody>
               <div className="AboutMore">
                 <h2>$3MM</h2>
@@ -85,11 +93,11 @@ const AboutPage = () => (
           </Card>
         </Col>
         <Col sm={12} md={4}>
-          <Card>
+          <Card style={{marginTop: "16px"}}>
             <CardBody>
               <div className="AboutMore">
-                <h2>110%</h2>
-                <span><i>Property Value Increase</i></span>
+                <h2>17%</h2>
+                <span><i>Average Yearly ROI</i></span>
               </div>
             </CardBody>
           </Card>
