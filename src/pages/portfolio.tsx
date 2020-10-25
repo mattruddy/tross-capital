@@ -22,9 +22,6 @@ const Portfolio = () => (
         <Col sm={12} md={6} lg={4}>
           <PropertyList title="Commercial" properties={commercialProperties as Property[]} />
         </Col>
-        <Col sm={12} md={6} lg={4}>
-          <PropertyList title="Recreational" properties={[]} />
-        </Col>
       </Row>
     </Container>
   </Layout>
