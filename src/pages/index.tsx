@@ -21,21 +21,21 @@ const AboutPage = () => (
           The founder Matthew has acquired, transacted and managed everything from Multifamily, Residential and Commercial Real 
           Estate since early 2014. Over the years, a great relationship has been build up with lenders across 
           the country due to our excellent investment reputation. The key to our success is keeping it simple, we do 
-          not waste time getting the best deal on a property but rather take the mentality approach of the 
-          great philosopher Voltaire "Perfect, is the enemy of good", if we find a good deal, we will offer a fair 
-          price, close quickly and move on to the next.
+          not waste time searching for the best deals on a property but rather, we find good deals at a fair 
+          price that we see long-term and growth potential, close quickly and move on to the next.
         </p>
         <p>
           {/* tech developed */}
           Tross Capital takes a lot of pride in its technology team. It is one of the 
           only Real Estate firms to also compete in the Financial Technology space. Our engineering team works 
           extensively on developing advanced algorithms using Artificial Intelligence and Machine Learning to help the company 
-          forecast investments for the long term. This is a very important aspect as it analyzes demographics for 
-          tracking up and coming areas with tremendous growth potential.
+          forecast investments for the long-term. This is a very important aspect, as it analyzes terabytes of demographics 
+          data to detect areas on the rise and with tremendous growth potential. It is a crucial component for our decision making 
+          process.
         </p>
         <p>
           {/* profits */}
-          The company does not target specifi
+          The company is always open to taking on new project and investors.  does not target specifi
           After recognizing the profit potential on properties 
           discovered using his algorithm, Matthew began his Real Estate investing career transacting
           properties with large cap rates and low maintenance. <b>Tross Capital LLC</b> The company was then partnered with his 
@@ -76,7 +76,7 @@ const AboutPage = () => (
           <Card style={{marginTop: "16px"}}>
             <CardBody>
               <div className="AboutMore">
-                <h2>$2MM</h2>
+                <h2>$2MM+</h2>
                 <span><i>Equity Capital Invested</i></span>
               </div>
             </CardBody>
@@ -86,7 +86,7 @@ const AboutPage = () => (
           <Card style={{marginTop: "16px"}}>
             <CardBody>
               <div className="AboutMore">
-                <h2>$3MM</h2>
+                <h2>$3MM+</h2>
                 <span><i>Transactions Closed</i></span>
               </div>
             </CardBody>
