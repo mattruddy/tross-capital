@@ -8,4 +8,4 @@ export const Branding = {
     defaultUrl: ""
 }
 
-export const mission = "We provide use our technology and financial abilities to provide excellent ROI for our investors. We priorities long term, stable properties with high capital rates and growth potential"
+export const mission = "We want to divide the line between the Real Estate Market and Technology to develop a diverse portfolio of long term assets with a high ROI"

@@ -19,7 +19,6 @@ const AboutPage = () => (
         <h1>About</h1>
         <h5><i>Who We Are</i></h5>
         <p>
-          {/* background */}
           The founder Matthew has acquired, transacted and managed everything from Multifamily, Residential and Commercial Real 
           Estate since early 2014. Over the years, a great relationship has been build up with lenders across 
           the country due to our excellent investment reputation. The key to our success is keeping it simple, we do 
@@ -28,24 +27,22 @@ const AboutPage = () => (
           criteria at a fair price, we will close quickly and move on to the next.
         </p>
         <p>
-          {/* tech developed */}
-          Tross Capital takes a lot of pride in its technology team. It is one of the 
+          At Tross Capital, we take a lot of pride in our technology team. It is one of the 
           only Real Estate firms to also compete in the Financial Technology space. Our engineering team works 
           extensively on building advanced algorithms using <b>Artificial Intelligence</b> and 
           <b> Machine Learning</b> to help the company 
           forecast investments for its long-term investments. This is a very important aspect, as it analyzes terabytes of demographics 
-          data to detect areas on the rise and with tremendous growth potential. It is a crucial component for our decision making 
+          data to detect areas on the rise with tremendous growth potential. It is a crucial component in the decision making 
           process.
         </p>
         <p>
-          {/* profits */}
-          The company is always open to taking on new project and investors. The passion of members 
-          on the team on the Real Estate market is off the charts as they often host local events 
+          This company is always open to taking on new project and investors. The passion of members 
+          on the team is off the charts as they often host local events 
           to discuss upcoming trends, growing industries and guest speakers. The company enjoys 
           helping and connecting with people all around the country with similar interests. Tross Capital 
           takes a lot of pride in their diverse portfolio
           and are never afraid to take on any project that catches their eye. Feel free to  
-          <Link href="/contact"> contact us</Link> if you have a property you would like to sell or 
+          <Link href="/contact" passHref> contact us</Link> if you have a property you would like to sell or 
           are a potential investor.
         </p>
         <h5><i>Mission</i></h5>
