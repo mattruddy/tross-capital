@@ -1,8 +1,9 @@
 import { Card, CardBody, Col, Container, Row } from 'reactstrap'
 import Layout from '../components/Layout'
+import { mission } from '../utils/utils'
 
 const AboutPage = () => (
-  <Layout title="Tross Capital">
+  <Layout title="Tross Capital" metaTitle="Who We Are" description={mission}>
     <div className="b-img main-photo fade-in">
     </div>
     <div className="main-text">
@@ -21,14 +22,16 @@ const AboutPage = () => (
           The founder Matthew has acquired, transacted and managed everything from Multifamily, Residential and Commercial Real 
           Estate since early 2014. Over the years, a great relationship has been build up with lenders across 
           the country due to our excellent investment reputation. The key to our success is keeping it simple, we do 
-          not waste time searching for the best deals on a property but rather, we find good deals at a fair 
-          price that we see long-term and growth potential, close quickly and move on to the next.
+          not waste time searching for the best deals on the market, but rather, developed a curtain 
+          buying criteria for properties with long term asset and. If a property matches our 
+          criteria at a fair price, we will close quickly and move on to the next.
         </p>
         <p>
           {/* tech developed */}
           Tross Capital takes a lot of pride in its technology team. It is one of the 
           only Real Estate firms to also compete in the Financial Technology space. Our engineering team works 
-          extensively on developing advanced algorithms using Artificial Intelligence and Machine Learning to help the company 
+          extensively on developing advanced algorithms using <b>Artificial Intelligence</b> and 
+          <b> Machine Learning</b> to help the company 
           forecast investments for the long-term. This is a very important aspect, as it analyzes terabytes of demographics 
           data to detect areas on the rise and with tremendous growth potential. It is a crucial component for our decision making 
           process.
@@ -44,8 +47,7 @@ const AboutPage = () => (
           very quickly when finding investments that match our buying criteria. 
         </p>
         <h5><i>Mission</i></h5>
-        <p>We provide use our technology and financial abilities to provide excellent ROI for our investors. We priorities long term,
-          stable properties with high capital rates and 
+        <p>{mission} 
         </p>
         </div>
       </Col>
@@ -55,7 +57,7 @@ const AboutPage = () => (
           <h4>Matthew Ruddy</h4>
           <h6 style={{fontSize: "18px"}}><i>President</i></h6>
           <img height="230" width="220" className="CardImage" src={"portrait.png"} />
-              <ul>
+              <ul style={{listStyleType: "square"}}>
               <li>
                   <b>Pennsylvania State University Graduate</b> - Financial Engineering
                 </li>

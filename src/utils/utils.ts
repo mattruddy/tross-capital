@@ -7,3 +7,5 @@ export const Branding = {
     defaultTitle: "Tross Capital",
     defaultUrl: ""
 }
+
+export const mission = "We provide use our technology and financial abilities to provide excellent ROI for our investors. We priorities long term, stable properties with high capital rates and "

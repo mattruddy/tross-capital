@@ -145,3 +145,15 @@ img {
   background-size: 100% 100%;
 }
 
+.BlogBackBtn {
+  background: transparent;
+  color: rgb(66, 66, 66);
+  border: none;
+}
+
+.BlogBackBtn:hover {
+  background: transparent;
+  color: rgb(66, 66, 66);
+  filter: brightness(40%);
+}
+

@@ -18,10 +18,10 @@ const BlogPage = ({body, title}: DataProps) => {
         <Layout description={body && body[0].text} metaTitle={title}>
             <div className="spacer" />
             <Container>
-            <Button onClick={(e) => {
+            <Button className="BlogBackBtn bs" onClick={(e) => {
                 e.preventDefault()
                 router.back()
-            }}><AiOutlineArrowLeft /></Button>
+            }}><AiOutlineArrowLeft style={{fontSize: "24px"}} /></Button>
                 <div className="BlogPage">
                 {title && <h1>{title}</h1>}
                     {body && body.map((el, i) => {
