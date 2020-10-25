@@ -157,3 +157,8 @@ img {
   filter: brightness(40%);
 }
 
+.NavLink:hover {
+  color: rgb(60, 165, 255);
+  filter: brightness(135%)
+}
+
