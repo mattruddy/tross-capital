@@ -41,7 +41,7 @@ const AboutPage = () => (
           to discuss upcoming trends, growing industries and guest speakers. The company enjoys 
           helping and connecting with people all around the country with similar interests. Tross Capital 
           takes a lot of pride in their diverse portfolio
-          and is never afraid to take on any project that catches their eye. Feel free to  
+          and  never afraid to take on any project that catches their eye. Feel free to  
           <Link href="/contact" passHref> contact us</Link> if you have a property you would like to sell or 
           are a potential investor.
         </p>
